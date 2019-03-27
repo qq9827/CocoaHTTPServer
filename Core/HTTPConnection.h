@@ -64,6 +64,10 @@
 	NSMutableArray *responseDataSizes;
 }
 
+- (HTTPConfig *)config;
+
+- (HTTPMessage *)request;
+
 - (id)initWithAsyncSocket:(GCDAsyncSocket *)newSocket configuration:(HTTPConfig *)aConfig;
 
 - (void)start;

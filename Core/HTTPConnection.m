@@ -111,6 +111,14 @@ static NSMutableArray *recentNonces;
 	});
 }
 
+- (HTTPConfig *)config {
+    return config;
+}
+
+- (HTTPMessage *)request {
+    return request;
+}
+
 /**
  * Generates and returns an authentication nonce.
  * A nonce is a  server-specified string uniquely generated for each 401 response.
